@@ -302,4 +302,4 @@ https://github.com/robvanvolt/DALLE-models
 
 1. 학습 많이 돌리기(최소한 6시간정도) >그러기 위해서는 gpu 환경으로 바꾸기!
 
-[train_dalle_pytorch.ipynb](dalle_notion%Dalle_prototype%2023086836bc5780f68eaefb5c52abcaaa/train_dalle_pytorch.ipynb)
+[train_dalle_pytorch.ipynb](train_dalle_pytorch.ipynb)
