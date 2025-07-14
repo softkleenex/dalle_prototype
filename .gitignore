@@ -1,0 +1,22 @@
+# COCO 데이터셋 관련
+coco_text_pairs/
+train2014/
+val2014/
+annotations/
+
+# 학습된 모델 체크포인트
+checkpoints/
+*.pt
+*.ckpt
+
+# 캐시나 중간 산출물
+*.log
+*.tmp
+*.npy
+*.npz
+__pycache__/
+.ipynb_checkpoints/
+
+# 환경파일
+.env
+*.egg-info/

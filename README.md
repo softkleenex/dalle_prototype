@@ -10,7 +10,7 @@ TRANSFORM
 
 ### 1. BPE
 
-![image.png](dalle_notion/Dalle_prototype/image-1.png)
+![image.png](asset/image.png)
 
 ```python
 class CocoTextPairDataset(Dataset):
@@ -83,7 +83,7 @@ class CocoTextPairDataset(Dataset):
         self.img_paths.sort()
 ```
 
-![image.png](dalle_notion/Dalle_prototype/image-1.png)
+![image.png](asset/image-1.png)
 
 vocab_size 재현 완료.(16384)
 
@@ -91,7 +91,7 @@ vocab_size 재현 완료.(16384)
 
 ### VAE
 
-![image.png](dalle_notion/Dalle_prototype/image-2.png)
+![image.png](asset/image-2.png)
 
 ```python
 #논문 이미지 증강 재현
@@ -138,7 +138,7 @@ class DalleImageAugmentation:
 
 1. 그렇지만, 이미지 생성에는 영향이 있을수 있음, 특히 코드북 사이즈 확인 필요(논문에서는 8192)
 
-![image.png](dalle_notion/Dalle_prototype/image-3.png)
+![image.png](asset//image-3.png)
 
 1. 그렇지만 현재의 vae도 잘 알려진 vae를 사용중, 가능하다면 이것 사용할 계획.
 
@@ -186,7 +186,7 @@ model:
 
 https://github.com/lucidrains/DALLE-pytorch/discussions/375
 
-![image.png](dalle_notion/Dalle_prototype/image-4.png)
+![image.png](asset/image-4.png)
 
 현재 사용중인 vae는 믿을 만하기때문에, 구조수정 외의 학습은 계획하지 않았다.
 
@@ -256,7 +256,7 @@ epoch1으로 학습 및 .pt(재현 가능한  dalle모델) 생성 완료,
 
 그렇지만 이미지 생성은 사용 불가능한 수준
 
-![image.png](dalle_notion/Dalle_prototype/image-5.png)
+![image.png](asset/image-7.png)
 
 Why?
 
@@ -280,14 +280,13 @@ https://github.com/robvanvolt/DALLE-models
 
 >BAD
 
-![alt text](image.png)
+![alt text](asset/image-8.png)
 
-![alt text](image-1.png)
+![alt text](asset/image-9.png)
 
-![alt text](image-2.png)
+![alt text](asset/image-10.png)
 
-![alt text](image-4.png)
-
+![alt text](asset/image-11.png)
 
 >굳이 사용할 필요 없는듯, 내 모델로 계속 가보자,
 
@@ -299,7 +298,7 @@ https://github.com/robvanvolt/DALLE-models
 
 논문의 구조 반영 및 파라미터 등 확인해보자.
 
-![image.png](dalle_notion/Dalle_prototype/image-6.png)
+![image.png](asset//image-6.png)
 
 1. 학습 많이 돌리기(최소한 6시간정도) >그러기 위해서는 gpu 환경으로 바꾸기!
 
